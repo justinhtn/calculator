@@ -1,0 +1,116 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* desktop styles  */
+@media only screen and (min-width: 600px) {
+  .calculator {
+    background-color: white;
+    margin: 20px;
+    outline: none;
+    width: 400px;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  #keypad {
+    height: 60vh;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .result {
+    margin: 2.25px 2px 1px 2.25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: 30vh;
+    outline: none;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* mobile styles  */
+@media only screen and (max-width: 600px) {
+  .calculator {
+    width: 100vw;
+    background-color: white;
+    outline: none;
+    border-color: rgb(243, 243, 243);
+    height: 60vh;
+    justify-content: space-between;
+  }
+
+  #keypad {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: white;
+  }
+
+  .result {
+    margin: 2.25px 2px 1px 2.25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: 40vh;
+    outline: none;
+    overflow-wrap: anywhere;
+  }
+}
+
+.spacer {
+  height: 2px;
+  background-color: rgb(245, 245, 245);
+}
+
+.item {
+  flex: 1 0 20%;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  padding: 5px;
+  margin: 2px;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.item:active {
+  background-color: rgb(224, 224, 224);
+  border-radius: 5px;
+}
+
+.blank {
+  opacity: 1;
+  flex: 1 0 20%;
+  margin: 5px;
+  outline: none;
+  padding: 5px;
+  margin: 2px 2px 1px 2px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+}
+
+#result {
+  padding: 10px;
+}
