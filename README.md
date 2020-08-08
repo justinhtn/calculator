@@ -1,5 +1,5 @@
 # Calculator
-Created with CodeSandbox. Build with React and boostrapped with create-react-app
+Created with CodeSandbox. Build with React and boostrapped with create-react-app.
 
 ## Install and run
 ```
